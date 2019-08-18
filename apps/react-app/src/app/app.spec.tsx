@@ -6,25 +6,25 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 
 describe('App', () => {
-  afterEach(cleanup);
+	afterEach(cleanup);
 
-  it('should render successfully', () => {
-    const { baseElement } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    );
+	it('should render successfully', () => {
+		const { baseElement } = render(
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
+		);
 
-    expect(baseElement).toBeTruthy();
-  });
+		expect(baseElement).toBeTruthy();
+	});
 
-  it('should have a greeting as the title', () => {
-    const { getByText } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    );
+	it('should have a greeting as the title', () => {
+		const { getByText } = render(
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
+		);
 
-    expect(getByText('Welcome to react-app!')).toBeTruthy();
-  });
+		expect(getByText('Welcome to react-app!')).toBeTruthy();
+	});
 });
