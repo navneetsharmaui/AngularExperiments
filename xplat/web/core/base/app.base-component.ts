@@ -4,7 +4,7 @@ import { Component, Inject } from '@angular/core';
 import { BaseComponent } from '@exps/core';
 
 export abstract class AppBaseComponent extends BaseComponent {
-  /**
-   * Define common root app component behavior for all web apps here
-   */
+	/**
+	 * Define common root app component behavior for all web apps here
+	 */
 }

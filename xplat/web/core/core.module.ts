@@ -6,58 +6,54 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { throwIfAlreadyLoaded } from '@exps/utils';
-import {
-  CoreModule,
-  PlatformLanguageToken,
-  PlatformWindowToken
-} from '@exps/core';
+import { CoreModule, PlatformLanguageToken, PlatformWindowToken } from '@exps/core';
 
 // bring in custom web services here...
 
 // factories
 export function winFactory() {
-  return window;
+	return window;
 }
 
 export function platformLangFactory() {
-  const browserLang = window.navigator.language || 'en'; // fallback English
-  // browser language has 2 codes, ex: 'en-US'
-  return browserLang.split('-')[0];
+	const browserLang = window.navigator.language || 'en'; // fallback English
+	// browser language has 2 codes, ex: 'en-US'
+	return browserLang.split('-')[0];
 }
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, `./assets/i18n/`, '.json');
+	return new TranslateHttpLoader(http, `./assets/i18n/`, '.json');
 }
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    CoreModule.forRoot([
-      {
-        provide: PlatformLanguageToken,
-        useFactory: platformLangFactory
-      },
-      {
-        provide: PlatformWindowToken,
-        useFactory: winFactory
-      }
-    ]),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient]
-      }
-    })
-  ]
+	imports: [
+		BrowserModule,
+		HttpClientModule,
+		CoreModule.forRoot([
+			{
+				provide: PlatformLanguageToken,
+				useFactory: platformLangFactory,
+			},
+			{
+				provide: PlatformWindowToken,
+				useFactory: winFactory,
+			},
+		]),
+		TranslateModule.forRoot({
+			loader: {
+				provide: TranslateLoader,
+				useFactory: createTranslateLoader,
+				deps: [HttpClient],
+			},
+		}),
+	],
 })
 export class ExpsCoreModule {
-  constructor(
-    @Optional()
-    @SkipSelf()
-    parentModule: ExpsCoreModule
-  ) {
-    throwIfAlreadyLoaded(parentModule, 'ExpsCoreModule');
-  }
+	constructor(
+		@Optional()
+		@SkipSelf()
+		parentModule: ExpsCoreModule
+	) {
+		throwIfAlreadyLoaded(parentModule, 'ExpsCoreModule');
+	}
 }

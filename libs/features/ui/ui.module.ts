@@ -5,8 +5,8 @@ import { UI_PIPES } from './pipes';
 const MODULES = [TranslateModule];
 
 @NgModule({
-  imports: [...MODULES],
-  declarations: [...UI_PIPES],
-  exports: [...MODULES, ...UI_PIPES]
+	imports: [...MODULES],
+	declarations: [...UI_PIPES],
+	exports: [...MODULES, ...UI_PIPES],
 })
 export class UISharedModule {}
