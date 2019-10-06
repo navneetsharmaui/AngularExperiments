@@ -20,7 +20,8 @@
       "@exps/electron": ["xplat/electron/index.ts"],
       "@exps/electron/*": ["xplat/electron/*"],
       "@exps/web": ["xplat/web/index.ts"],
-      "@exps/web/*": ["xplat/web/*"]
+      "@exps/web/*": ["xplat/web/*"],
+      "@exps/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

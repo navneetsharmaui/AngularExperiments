@@ -10,6 +10,7 @@ export const App = () => {
    *
    * Note: The corresponding styles are in the ./${fileName}.${style} file.
    */
+  const title: string = 'Welcome to react-app';
   return (
     <div className="app">
       <header className="flex">
@@ -18,11 +19,11 @@ export const App = () => {
           width="75"
           src="https://nx.dev/assets/images/nx-logo-white.svg"
         />
-        <h1>Welcome to react-app!</h1>
+        <exps-greeting title={title} />
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
-        <p>Thank you for using and showing some ♥ for Nx.</p>
+        <p>Thank you for using and showing some ♥ for Ng.</p>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
