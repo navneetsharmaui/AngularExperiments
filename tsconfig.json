@@ -22,7 +22,8 @@
 			"@exps/web": ["xplat/web/index.ts"],
 			"@exps/web/*": ["xplat/web/*"],
 			"@exps/ui": ["libs/ui/src/index.ts"],
-			"@exps/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+			"@exps/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+			"@exps/todo-list-shell": ["libs/todo-list-shell/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

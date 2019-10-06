@@ -9,33 +9,46 @@
 	},
 	"projects": {
 		"libs": {
-			"tags": []
+			"tags": ["scope:web-angular-app", "scope:react-app", "scope:electron-angular-app"],
+			"implicitDependencies": []
 		},
 		"xplat": {
-			"tags": []
+			"tags": ["scope:web-angular-app", "scope:react-app", "scope:electron-angular-app"],
+			"implicitDependencies": ["web-angular-app", "electron-angular-app"]
 		},
 		"web-angular-app-e2e": {
-			"tags": []
+			"tags": ["scope:web-angular-app"],
+			"implicitDependencies": ["web-angular-app"]
 		},
 		"web-angular-app": {
-			"tags": []
+			"tags": ["scope:web-angular-app"],
+			"implicitDependencies": []
 		},
 		"react-app": {
-			"tags": []
+			"tags": ["scope:react-app"],
+			"implicitDependencies": []
 		},
 		"react-app-e2e": {
-			"tags": []
+			"tags": ["scope:react-app"],
+			"implicitDependencies": ["react-app"]
 		},
 		"api": {
-			"tags": []
+			"tags": ["scope:web-angular-app", "scope:react-app"],
+			"implicitDependencies": []
 		},
 		"electron-angular-app": {
-			"tags": []
+			"tags": ["scope:electron-angular-app"],
+			"implicitDependencies": ["web-angular-app"]
 		},
 		"ui": {
-			"tags": []
+			"tags": ["scope:shared"],
+			"implicitDependencies": []
 		},
 		"api-interfaces": {
+			"tags": ["scope:shared"],
+			"implicitDependencies": []
+		},
+		"todo-list-shell": {
 			"tags": []
 		}
 	}

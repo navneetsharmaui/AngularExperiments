@@ -48,9 +48,26 @@
             {
                 "allow": [],
                 "depConstraints": [{
-                    "sourceTag": "*",
-                    "onlyDependOnLibsWithTags": ["*"]
-                }]
+                        "sourceTag": "scope:shared",
+                        "onlyDependOnLibsWithTags": ["scope:shared"]
+                    },
+                    {
+                        "sourceTag": "scope:we-angular-app",
+                        "onlyDependOnLibsWithTags": [
+                            "scope:web-angular-app",
+                            "scope:electron-angular-app",
+                            "scope:shared"
+                        ]
+                    },
+                    {
+                        "sourceTag": "scope:electron-angular-app",
+                        "onlyDependOnLibsWithTags": ["scope:electron-angular-app", "scope:shared"]
+                    },
+                    {
+                        "sourceTag": "scope:react-app",
+                        "onlyDependOnLibsWithTags": ["scope:react-app", "scope:shared"]
+                    }
+                ]
             }
         ],
         "no-conflicting-lifecycle": true,

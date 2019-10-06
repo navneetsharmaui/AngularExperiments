@@ -8,6 +8,12 @@ export const routes: Routes = [
 	{
 		path: '',
 		component: HomeComponent,
+		children: [
+			{
+				path: 'list',
+				loadChildren: () => import('@exps/todo-list-shell').then((m) => m.TodoListShellModule),
+			},
+		],
 	},
 ];
 

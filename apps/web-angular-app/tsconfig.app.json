@@ -5,6 +5,6 @@
 		"types": []
 	},
 	"files": ["src/main.browser.ts", "src/polyfills.ts"],
-	"include": ["**/*.ts"],
+	"include": ["**/*.ts", "../../libs/todo-list-shell/src/index.ts"],
 	"exclude": ["src/test-setup.ts", "**/*.spec.ts"]
 }

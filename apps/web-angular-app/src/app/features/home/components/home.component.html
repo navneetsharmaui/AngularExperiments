@@ -7,5 +7,7 @@
 
 
     <p>{{ hello$ | async | json }}</p>
+    <a [routerLink]="['/home/list']" routerLinkActive="router-link-active">List</a>
+    <router-outlet></router-outlet>
 </div>
 <exps-footer></exps-footer>
