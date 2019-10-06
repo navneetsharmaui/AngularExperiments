@@ -7,5 +7,30 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "libs": {
+      "tags": []
+    },
+    "xplat": {
+      "tags": []
+    },
+    "web-angular-app-e2e": {
+      "tags": []
+    },
+    "web-angular-app": {
+      "tags": []
+    },
+    "react-app": {
+      "tags": []
+    },
+    "react-app-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "electron-angular-app": {
+      "tags": []
+    }
+  }
 }

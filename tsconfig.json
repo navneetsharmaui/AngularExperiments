@@ -15,7 +15,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@exps/*": ["libs/*"],
+      "@exps/electron": ["xplat/electron/index.ts"],
+      "@exps/electron/*": ["xplat/electron/*"],
+      "@exps/web": ["xplat/web/index.ts"],
+      "@exps/web/*": ["xplat/web/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
