@@ -1,3 +1,6 @@
+// Custom Elements
+import '@exps/ui';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -8,9 +11,9 @@ import { environment } from '@exps/core';
 import { AppElectronModule } from './app/app.electron.module';
 
 if (environment.production) {
-  enableProdMode();
+	enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(AppElectronModule)
-  .catch(err => console.log(err));
+	.bootstrapModule(AppElectronModule)
+	.catch((err) => console.log(err));

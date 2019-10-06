@@ -6,18 +6,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from './features/shared/shared.module';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    loadChildren: './features/home/home.module#HomeModule'
-  }
+	{
+		path: '',
+		redirectTo: '/home',
+		pathMatch: 'full',
+	},
+	{
+		path: 'home',
+		loadChildren: './features/home/home.module#HomeModule',
+	},
 ];
 
 @NgModule({
-  imports: [SharedModule, RouterModule.forRoot(routes)]
+	imports: [SharedModule, RouterModule.forRoot(routes)],
 })
 export class AppRoutingModule {}

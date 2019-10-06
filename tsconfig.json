@@ -1,28 +1,29 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@exps/*": ["libs/*"],
-      "@exps/electron": ["xplat/electron/index.ts"],
-      "@exps/electron/*": ["xplat/electron/*"],
-      "@exps/web": ["xplat/web/index.ts"],
-      "@exps/web/*": ["xplat/web/*"],
-      "@exps/ui": ["libs/ui/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"rootDir": ".",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "esnext",
+		"typeRoots": ["node_modules/@types"],
+		"lib": ["es2017", "dom"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@exps/*": ["libs/*"],
+			"@exps/electron": ["xplat/electron/index.ts"],
+			"@exps/electron/*": ["xplat/electron/*"],
+			"@exps/web": ["xplat/web/index.ts"],
+			"@exps/web/*": ["xplat/web/*"],
+			"@exps/ui": ["libs/ui/src/index.ts"],
+			"@exps/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
 }

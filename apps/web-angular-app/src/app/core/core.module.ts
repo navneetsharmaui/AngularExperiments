@@ -4,6 +4,6 @@ import { NgModule } from '@angular/core';
 import { ExpsCoreModule } from '@exps/web';
 
 @NgModule({
-  imports: [ExpsCoreModule]
+	imports: [ExpsCoreModule],
 })
 export class CoreModule {}

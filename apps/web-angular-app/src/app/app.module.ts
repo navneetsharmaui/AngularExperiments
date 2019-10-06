@@ -1,18 +1,23 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // libs
 import { environment } from '@exps/core';
 
 // app
-import { CoreModule } from './core/core.module';
 import { SharedModule } from './features/shared/shared.module';
-import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core';
 
 @NgModule({
-  imports: [CoreModule, SharedModule, AppRoutingModule],
-  declarations: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	declarations: [AppComponent],
+	exports: [SharedModule],
+	imports: [BrowserModule, BrowserAnimationsModule, CoreModule, SharedModule, HttpClientModule],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA],
+	providers: [],
 })
 export class AppModule {}

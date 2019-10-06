@@ -1,39 +1,42 @@
 {
-  "npmScope": "exps",
-  "implicitDependencies": {
-    "angular.json": "*",
-    "package.json": "*",
-    "tsconfig.json": "*",
-    "tslint.json": "*",
-    "nx.json": "*"
-  },
-  "projects": {
-    "libs": {
-      "tags": []
-    },
-    "xplat": {
-      "tags": []
-    },
-    "web-angular-app-e2e": {
-      "tags": []
-    },
-    "web-angular-app": {
-      "tags": []
-    },
-    "react-app": {
-      "tags": []
-    },
-    "react-app-e2e": {
-      "tags": []
-    },
-    "api": {
-      "tags": []
-    },
-    "electron-angular-app": {
-      "tags": []
-    },
-    "ui": {
-      "tags": []
-    }
-  }
+	"npmScope": "exps",
+	"implicitDependencies": {
+		"angular.json": "*",
+		"package.json": "*",
+		"tsconfig.json": "*",
+		"tslint.json": "*",
+		"nx.json": "*"
+	},
+	"projects": {
+		"libs": {
+			"tags": []
+		},
+		"xplat": {
+			"tags": []
+		},
+		"web-angular-app-e2e": {
+			"tags": []
+		},
+		"web-angular-app": {
+			"tags": []
+		},
+		"react-app": {
+			"tags": []
+		},
+		"react-app-e2e": {
+			"tags": []
+		},
+		"api": {
+			"tags": []
+		},
+		"electron-angular-app": {
+			"tags": []
+		},
+		"ui": {
+			"tags": []
+		},
+		"api-interfaces": {
+			"tags": []
+		}
+	}
 }
