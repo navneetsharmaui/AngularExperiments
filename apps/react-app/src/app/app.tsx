@@ -13,6 +13,7 @@ export const App = () => {
   const title: string = 'Welcome to react-app';
   return (
     <div className="app">
+		  <exps-menu></exps-menu>
       <header className="flex">
         <img
           alt=""
@@ -148,6 +149,7 @@ nx affected:e2e
         )}
       />
       {/* END: routes */}
+	  <exps-footer></exps-footer>
     </div>
   );
 };
