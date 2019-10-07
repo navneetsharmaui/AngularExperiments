@@ -1,55 +1,48 @@
 {
-	"npmScope": "exps",
-	"implicitDependencies": {
-		"angular.json": "*",
-		"package.json": "*",
-		"tsconfig.json": "*",
-		"tslint.json": "*",
-		"nx.json": "*"
-	},
-	"projects": {
-		"libs": {
-			"tags": ["scope:web-angular-app", "scope:react-app", "scope:electron-angular-app"],
-			"implicitDependencies": []
-		},
-		"xplat": {
-			"tags": ["scope:web-angular-app", "scope:react-app", "scope:electron-angular-app"],
-			"implicitDependencies": ["web-angular-app", "electron-angular-app"]
-		},
-		"web-angular-app-e2e": {
-			"tags": ["scope:web-angular-app"],
-			"implicitDependencies": ["web-angular-app"]
-		},
-		"web-angular-app": {
-			"tags": ["scope:web-angular-app"],
-			"implicitDependencies": []
-		},
-		"react-app": {
-			"tags": ["scope:react-app"],
-			"implicitDependencies": []
-		},
-		"react-app-e2e": {
-			"tags": ["scope:react-app"],
-			"implicitDependencies": ["react-app"]
-		},
-		"api": {
-			"tags": ["scope:web-angular-app", "scope:react-app"],
-			"implicitDependencies": []
-		},
-		"electron-angular-app": {
-			"tags": ["scope:electron-angular-app"],
-			"implicitDependencies": ["web-angular-app"]
-		},
-		"ui": {
-			"tags": ["scope:shared"],
-			"implicitDependencies": []
-		},
-		"api-interfaces": {
-			"tags": ["scope:shared"],
-			"implicitDependencies": []
-		},
-		"todo-list-shell": {
-			"tags": []
-		}
-	}
+    "npmScope": "exps",
+    "implicitDependencies": {
+        "angular.json": "*",
+        "package.json": "*",
+        "tsconfig.json": "*",
+        "tslint.json": "*",
+        "nx.json": "*"
+    },
+    "projects": {
+        "libs": {
+            "tags": []
+        },
+        "xplat": {
+            "tags": []
+        },
+        "web-angular-app-e2e": {
+            "tags": []
+        },
+        "web-angular-app": {
+            "tags": []
+        },
+        "react-app": {
+            "tags": []
+        },
+        "react-app-e2e": {
+            "tags": []
+        },
+        "api": {
+            "tags": []
+        },
+        "electron-angular-app": {
+            "tags": []
+        },
+        "ui": {
+            "tags": []
+        },
+        "api-interfaces": {
+            "tags": []
+        },
+        "todo-list-shell": {
+            "tags": []
+        },
+        "web-elements": {
+            "tags": []
+        }
+    }
 }

@@ -516,7 +516,8 @@
 		}
 	},
 	"cli": {
-		"defaultCollection": "@nstudio/xplat"
+		"defaultCollection": "@nstudio/schematics",
+		"packageManager": "npm"
 	},
 	"schematics": {
 		"@nrwl/react": {

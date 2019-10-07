@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 // xplat
 import { AppBaseComponent } from '@exps/web';
@@ -13,11 +13,10 @@ import { Router } from '@angular/router';
 	selector: 'exps-root',
 	templateUrl: './app.component.html',
 })
-export class AppComponent extends AppBaseComponent {
+export class AppComponent extends AppBaseComponent implements OnInit {
 	/**
 	 * * Public Properties
 	 */
-	public hello$: Observable<IMessage> = this.http.get<IMessage>('/api/hello');
 	public isElectron = isElectron();
 
 	/**

@@ -1,6 +1,22 @@
 {
     "rulesDirectory": ["node_modules/@nrwl/workspace/src/tslint", "node_modules/codelyzer"],
     "rules": {
+        "use-input-property-decorator": true,
+        "use-output-property-decorator": true,
+        "use-host-property-decorator": true,
+        "use-life-cycle-interface": true,
+        "component-class-suffix": true,
+        "directive-class-suffix": true,
+        "nx-enforce-module-boundaries": [
+            true,
+            {
+                "allow": [],
+                "depConstraints": [{
+                    "sourceTag": "*",
+                    "onlyDependOnLibsWithTags": ["*"]
+                }]
+            }
+        ],
         "no-console": [true, "debug", "time", "timeEnd", "trace"],
         "directive-selector": [true, "attribute", "exps", "camelCase"],
         "component-selector": [true, "element", "exps", "kebab-case"],
@@ -43,33 +59,6 @@
         "triple-equals": [true, "allow-null-check"],
         "unified-signatures": true,
         "variable-name": false,
-        "nx-enforce-module-boundaries": [
-            true,
-            {
-                "allow": [],
-                "depConstraints": [{
-                        "sourceTag": "scope:shared",
-                        "onlyDependOnLibsWithTags": ["scope:shared"]
-                    },
-                    {
-                        "sourceTag": "scope:we-angular-app",
-                        "onlyDependOnLibsWithTags": [
-                            "scope:web-angular-app",
-                            "scope:electron-angular-app",
-                            "scope:shared"
-                        ]
-                    },
-                    {
-                        "sourceTag": "scope:electron-angular-app",
-                        "onlyDependOnLibsWithTags": ["scope:electron-angular-app", "scope:shared"]
-                    },
-                    {
-                        "sourceTag": "scope:react-app",
-                        "onlyDependOnLibsWithTags": ["scope:react-app", "scope:shared"]
-                    }
-                ]
-            }
-        ],
         "no-conflicting-lifecycle": true,
         "no-host-metadata-property": true,
         "no-input-rename": true,

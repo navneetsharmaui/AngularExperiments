@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core';
 
 @NgModule({
-	bootstrap: [AppComponent],
 	declarations: [AppComponent],
 	exports: [SharedModule],
 	imports: [BrowserModule, BrowserAnimationsModule, CoreModule, SharedModule, HttpClientModule],

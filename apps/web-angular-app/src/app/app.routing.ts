@@ -13,7 +13,11 @@ const routes: Routes = [
 	},
 	{
 		path: 'home',
-		loadChildren: './features/home/home.module#HomeModule',
+		loadChildren: () => import('./features/home/home.module').then((mod) => mod.HomeModule),
+	},
+	{
+		path: '**',
+		redirectTo: 'home',
 	},
 ];
 

@@ -15,7 +15,7 @@ export class HomeComponent extends BaseComponent implements OnInit {
 	/**
 	 * Public Properties
 	 */
-	public hello$: Observable<IMessage> = this.http.get<IMessage>('/api/hello');
+	// public hello$: Observable<IMessage> = this.http.get<IMessage>('/api/hello');
 	public isElectron = isElectron();
 
 	/**
