@@ -1,11 +1,11 @@
 <exps-menu></exps-menu>
 <div class="p-x-20">
-	<exps-header title="web-angular-app"></exps-header>
-	<exps-greeting title="web-angular-app"></exps-greeting>
+    <exps-header title="web-angular-app"></exps-header>
+    <exps-greeting [title]="'web-angular-app'"></exps-greeting>
 
-	<h1>{{ 'welcome' | translate }}!</h1>
+    <h1>{{ 'welcome' | translate }}!</h1>
 
-	<a [routerLink]="['/home/list']" routerLinkActive="router-link-active">List</a>
-	<router-outlet></router-outlet>
+    <a [routerLink]="['/home/list']" routerLinkActive="router-link-active">List</a>
+    <router-outlet></router-outlet>
 </div>
 <exps-footer></exps-footer>
