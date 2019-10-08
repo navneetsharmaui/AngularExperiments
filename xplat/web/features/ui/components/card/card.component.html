@@ -1,0 +1,14 @@
+<div class="exps-card">
+	<div class="exps-card-container">
+		<div class="exps-card-title-group">
+			<div class="exps-card-title">
+				<h1>
+					<ng-container *ngIf="cardTitleRef" [ngTemplateOutlet]="cardTitleRef"> </ng-container>
+				</h1>
+			</div>
+		</div>
+		<div class="exps-card-content">
+			<ng-container [ngTemplateOutlet]="cardContentRef"> </ng-container>
+		</div>
+	</div>
+</div>
